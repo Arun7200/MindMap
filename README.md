@@ -41,6 +41,7 @@ All UI elements are generated from a **JSON data file**, meaning any change in t
 - **Fit View** button to center the entire mindmap  
 - **Drill Down / Drill Up** buttons to explore the hierarchy level by level  
 
+
 ###  Export
 - Export the current mindmap as a **PNG image**
 ##  Project Structure
