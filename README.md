@@ -1,64 +1,51 @@
-Interactive Mindmap UI (Frontend Assignment)
+# Interactive Mindmap UI (Frontend Assignment)
 
-This project is an interactive Mindmap UI built as part of a Frontend Development Internship assignment.
-The main idea was to visualize hierarchical data in a clean and intuitive way, while allowing users to explore, edit, and interact with the data easily.
+This project is an **interactive Mindmap UI** built as part of a **Frontend Development Internship assignment**.  
+The goal of this project is to visualize hierarchical data in a clean and intuitive way while allowing users to explore, edit, and interact with the data easily.
 
-Everything you see in the UI is generated from a JSON data file, so changing the data automatically updates the mindmap without changing the UI code.
+All UI elements are generated from a **JSON data file**, meaning any change in the data automatically updates the mindmap without modifying the UI code.
 
-✨ What the App Does
+---
 
-Shows data as a mindmap with nodes and connections
+## What the App Does
 
-Supports parent → child relationships
+- Displays data as a **mindmap** with nodes and connections  
+- Supports **parent → child** relationships  
+- Allows smooth navigation of **large graphs**  
+- Enables users to **add, edit, and delete nodes**  
+- Updates the UI **instantly** when data changes  
 
-Allows users to navigate large graphs smoothly
+> The focus of this project is **clarity, interaction, and data-driven design**, not pixel-perfect visuals.
 
-Lets users edit, add, and delete nodes
+---
 
-Updates the UI instantly when data changes
+## Key Features
 
-The focus of this project is clarity, interaction, and data-driven design, not pixel-perfect visuals.
+###  Mindmap Visualization
+- Nodes connected in a clear hierarchical structure  
+- Automatically laid out using a graph layout algorithm  
+- Performs well even as the graph grows  
 
-🎯 Key Features
-🗺️ Mindmap Visualization
+### Interactions
+- Hover over a node to highlight it and view its summary  
+- Click a node to **expand or collapse** its children  
+- Right-click on a node to:
+  - Rename the node  
+  - Add a child node  
+  - Delete the node  
+- Double-click a node to quickly edit its label  
 
-Nodes connected in a clear hierarchical structure
+###  Navigation
+- Drag to pan around the graph  
+- Scroll to zoom in and out  
+- **Fit View** button to center the entire mindmap  
+- **Drill Down / Drill Up** buttons to explore the hierarchy level by level  
 
-Automatically laid out using a graph layout algorithm
+###  Export
+- Export the current mindmap as a **PNG image**
+##  Project Structure
 
-Works well even as the graph grows
-
-🖱️ Interactions
-
-Hover on a node to highlight it and see its summary
-
-Click on a node to expand or collapse its children
-
-Right-click on a node to:
-
-Rename it
-
-Add a child node
-
-Delete the node
-
-Double-click a node to quickly edit its label
-
-🔍 Navigation
-
-Drag to pan around the graph
-
-Scroll to zoom in/out
-
-Fit View button to center everything
-
-Drill Down / Drill Up buttons to explore the hierarchy level by level
-
-💾 Export
-
-Export the current mindmap as a PNG image
-
-📁 Project Structure
+```text
 frontend_assignment/
 │
 ├── public/
@@ -68,7 +55,7 @@ frontend_assignment/
 ├── src/
 │   ├── components/
 │   │   ├── MindMap.jsx         # Main graph logic
-│   │   └── ContextMenu.jsx     # Right-click menu
+│   │   └── ContextMenu.jsx     # Right-click context menu
 │   │
 │   ├── App.jsx
 │   ├── main.jsx
@@ -77,39 +64,35 @@ frontend_assignment/
 ├── README.md
 └── package.json
 
-📊 Data-Driven Design (Important)
+###  Data-Driven Design (Important)
 
-The entire UI is powered by a JSON file (mindmap.json).
+The entire UI is powered by a single JSON file: **`mindmap.json`**.
 
-Add a new node → it appears in the UI
+- Add a new node → it appears instantly in the UI  
+- Edit text in the JSON file → the UI updates automatically  
+- Change the hierarchy → the mindmap structure updates accordingly  
 
-Change text in JSON → UI updates automatically
+> The JSON file serves as the **single source of truth** for the application.
 
-Change hierarchy → mindmap structure updates
+---
 
-The JSON file is the single source of truth.
+## 🛠️ Tech Stack
 
-🛠️ Tech Used
+- **React (Vite)** – UI rendering and state management  
+- **Cytoscape.js** – Graph and mindmap visualization  
+- **cytoscape-dagre** – Automatic graph layout  
+- **JavaScript (ES6)** – Application logic and interactions  
+- **CSS** – Styling and layout  
 
-React (Vite) – UI and state management
+No backend is used — this is a **frontend-focused project**.
 
-Cytoscape.js – Graph and mindmap rendering
+---
 
-cytoscape-dagre – Automatic layout
+## ▶️ How to Run the Project
 
-JavaScript (ES6) – Logic and interactions
-
-CSS – Styling and layout
-
-No backend is used — this is a frontend-focused project.
-
-▶️ How to Run the Project
-
-Clone the repository
-
-git clone <repo-url>
-
-
+1. **Clone the repository**
+   ```bash
+   git clone <repo-url>
 Install dependencies
 
 npm install
@@ -121,60 +104,32 @@ npm run dev
 
 
 Open the app in your browser
-👉 http://localhost:5173
 
-🎥 Demo Video (Submission)
+http://localhost:5173
 
-The demo video shows:
-
-Pan and zoom navigation
-
-Hover behavior
-
-Expand / collapse nodes
-
-Drill down and drill up
-
-Editing nodes (rename, add, delete)
-
-Exporting the mindmap as an image
-
-Voice narration is optional — interactions are clearly visible.
 
 📸 Screenshots (Submission)
 
+The submission includes screenshots of:
+
 Full mindmap view
 
-Hover interaction
+Hover interaction on nodes
 
 Context menu (right-click)
 
-Expand / collapse example
+Expand and collapse functionality
 
 Drill navigation
 
-Export result
+Exported image result
 
-💡 Design Notes
+##Design Notes
 
-UI logic and data are kept separate on purpose
+UI logic and data are intentionally kept separate
 
 Interactions are designed to be simple and discoverable
 
 The project avoids over-engineering and focuses on usability
 
-All edits happen on the client side
-
-🚀 Possible Improvements
-
-If extended further, this project could include:
-
-Saving changes to localStorage or backend
-
-Search and filter for nodes
-
-Keyboard shortcuts
-
-Export to PDF or JSON
-
-Better animations for expand/collapse
+All edits occur entirely on the client side
