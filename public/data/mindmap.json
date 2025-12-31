@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "title": "Vitamins in Human Body",
+    "contentType": "mindmap"
+  },
+  "nodes": [
+    {
+      "id": "root",
+      "label": "Vitamins",
+      "summary": "Essential micronutrients required for normal body functions"
+    },
+
+    {
+      "id": "fat",
+      "label": "Fat Soluble",
+      "summary": "Stored in fat tissues and liver"
+    },
+    {
+      "id": "water",
+      "label": "Water Soluble",
+      "summary": "Not stored, excess excreted via urine"
+    },
+
+    {
+      "id": "vit_a",
+      "label": "Vitamin A",
+      "summary": "Supports vision and immune system"
+    },
+    {
+      "id": "vit_d",
+      "label": "Vitamin D",
+      "summary": "Helps calcium absorption and bone health"
+    },
+    {
+      "id": "vit_e",
+      "label": "Vitamin E",
+      "summary": "Acts as an antioxidant"
+    },
+    {
+      "id": "vit_k",
+      "label": "Vitamin K",
+      "summary": "Essential for blood clotting"
+    },
+
+    {
+      "id": "vit_b",
+      "label": "Vitamin B Complex",
+      "summary": "Supports energy metabolism and nerve function"
+    },
+    {
+      "id": "vit_c",
+      "label": "Vitamin C",
+      "summary": "Boosts immunity and collagen production"
+    },
+
+    {
+      "id": "sources",
+      "label": "Dietary Sources",
+      "summary": "Foods providing vitamins"
+    },
+    {
+      "id": "deficiency",
+      "label": "Deficiency",
+      "summary": "Lack of vitamins causes health issues"
+    },
+    {
+      "id": "excess",
+      "label": "Excess",
+      "summary": "Overconsumption can be toxic"
+    }
+  ],
+
+  "edges": [
+    { "source": "root", "target": "fat" },
+    { "source": "root", "target": "water" },
+    { "source": "root", "target": "sources" },
+    { "source": "root", "target": "deficiency" },
+    { "source": "root", "target": "excess" },
+
+    { "source": "fat", "target": "vit_a" },
+    { "source": "fat", "target": "vit_d" },
+    { "source": "fat", "target": "vit_e" },
+    { "source": "fat", "target": "vit_k" },
+
+    { "source": "water", "target": "vit_b" },
+    { "source": "water", "target": "vit_c" }
+  ],
+
+  "hierarchy": {
+    "root": ["fat", "water", "sources", "deficiency", "excess"],
+
+    "fat": ["vit_a", "vit_d", "vit_e", "vit_k"],
+    "water": ["vit_b", "vit_c"],
+
+    "sources": [],
+    "deficiency": [],
+    "excess": [],
+
+    "vit_a": [],
+    "vit_d": [],
+    "vit_e": [],
+    "vit_k": [],
+    "vit_b": [],
+    "vit_c": []
+  }
+}
